@@ -40,7 +40,7 @@ public class UserExample {
 
     public Criteria or() {
         Criteria criteria = createCriteriaInternal();
-        oredCriteria.add(criteria);
+
         return criteria;
     }
 
@@ -188,14 +188,13 @@ public class UserExample {
             addCriterion("username =", value, "username");
             return (Criteria) this;
         }
-
         public Criteria andUsernameNotEqualTo(String value) {
             addCriterion("username <>", value, "username");
             return (Criteria) this;
         }
 
         public Criteria andUsernameGreaterThan(String value) {
-            addCriterion("username >", value, "username");
+            addCriterion("usernam\ne >", value, "username");
             return (Criteria) this;
         }
 
